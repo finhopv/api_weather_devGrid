@@ -22,7 +22,7 @@
     docker run -d -p 5000:5000 --name weather_service weather_service
     ```
 
-## how mto test
+## how to test
 
 1. into the container:
     ```sh
@@ -36,9 +36,13 @@
     or
     execute the
     run.py
+   In Browser you can choose the:
+      post /weather/list_city  
+      get /weather/user_id
+      get /weather_data/id   
 
 ## envirorment variables
 
-make sure de configurar a variável de ambiente `OPEN_WEATHER_API_KEY` with your Open Weather API token before buid the docker image:
+make sure to confogure the environment variable`OPEN_WEATHER_API_KEY` with your Open Weather API token before build the docker image:
 ```sh
 export OPEN_WEATHER_API_KEY=<YOUR_TOKEN>
