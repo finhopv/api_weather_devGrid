@@ -1,0 +1,26 @@
+import httpx
+import asyncio
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+#async def fetch_weather_data(user_id: str, city_ids: list[int], db: Session):
+api_key = os.getenv('SECRET_KEY')
+url = "https://api.openweathermap.org/data/2.5/weather"
+id_city=3442778
+async def fetch_data():
+    async with httpx.AsyncClient() as client:
+        # Fazendo uma requisição GET
+        url_t=("https://api.openweathermap.org/data/2.5/weather"+"?"+"id={}"+"&&appid={}").format(id_city,api_key)
+        print(url_t)
+        response = await client.get(url_t)
+        print(response.status_code)
+        print(response.json())
+
+        # Fazendo uma requisição POST
+        #response = await client.post('https://api.example.com/resource', json={'key': 'value'})
+        #print(response.status_code)
+        #print(response.json())
+
+# Executando a função assíncrona
+asyncio.run(fetch_data())
