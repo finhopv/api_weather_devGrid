@@ -43,8 +43,8 @@
     ```
     
 
-## envirorment variables
+## environment variables
 
-make sure to confogure the environment variable`OPEN_WEATHER_API_KEY` with your Open Weather API token before build the docker image:
+make sure to configure the environment variable`OPEN_WEATHER_API_KEY` with your Open Weather API token before build the docker image:
 ```sh
 export OPEN_WEATHER_API_KEY=<YOUR_TOKEN>
