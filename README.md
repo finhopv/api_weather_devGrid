@@ -31,15 +31,17 @@
 
 2. run the tests:
     ```sh
-    pytest --cov=app tests/ 
-    ```
-    or
+    pytest --cov=app tests/
+
+      or
     execute the
     run.py
    In Browser you can choose the:
       post /weather/list_city  
       get /weather/user_id
-      get /weather_data/id   
+      get /weather_data/id 
+    ```
+    
 
 ## envirorment variables
 
