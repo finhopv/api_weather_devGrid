@@ -35,7 +35,6 @@ This service collects weather data from the Open Weather API and stores it in a 
 
  ```env
  SECRET_KEY=your_open_weather_api_key
- DATABASE_URL=postgresql://user:password@db:5432/weather_db
  ```
 
 3. Build and start Docker containers:
