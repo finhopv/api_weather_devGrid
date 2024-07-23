@@ -2,7 +2,7 @@
 
 ## Description
 
-This service collects weather data from the Open Weather API and stores it in a PostgreSQL database. It provides endpoints to start data collection and check progress.
+This service collects weather data from the Open Weather API and stores it in a SQLITE3 database. It provides endpoints to start data collection and check progress.
 
 ## Functionalities
 
